@@ -7,8 +7,8 @@ const getTarefas = async () => {
   const response = await fetch("https://parseapi.back4app.com/classes/Tarefa", {
     method: "GET",
     headers: {
-      "X-Parse-Application-Id": "LXzh7fjlzQIIkqUCzg4zl7yfttXtgsOofUqeVpZR",
-      "X-Parse-REST-API-Key": "2P5KVRTih4tegOxlzCPXbxUk1TMCKi932c4b6F6k",
+      "X-Parse-Application-Id": "sRxhlzJsLSmcolId1Ln8EDuEAxPggKGEWbMy2ZyP",
+      "X-Parse-REST-API-Key": "rzAwjCdicdWXUb2C8oiyzEuc0Uj9TC9TqSJPGw8i",
     },
   });
   const data = await response.json();
@@ -35,8 +35,8 @@ const listarTarefas = async () => {
           method: "PUT",
           headers: {
             "X-Parse-Application-Id":
-              "LXzh7fjlzQIIkqUCzg4zl7yfttXtgsOofUqeVpZR",
-            "X-Parse-REST-API-Key": "2P5KVRTih4tegOxlzCPXbxUk1TMCKi932c4b6F6k",
+            "sRxhlzJsLSmcolId1Ln8EDuEAxPggKGEWbMy2ZyP",
+            "X-Parse-REST-API-Key": "rzAwjCdicdWXUb2C8oiyzEuc0Uj9TC9TqSJPGw8i",
             "Content-Type": "application/json",
           },
           body: JSON.stringify({ concluida: !tarefa.concluida }),
